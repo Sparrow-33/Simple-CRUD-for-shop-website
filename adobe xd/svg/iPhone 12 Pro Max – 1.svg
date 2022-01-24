@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="428" height="926" viewBox="0 0 428 926">
+  <defs>
+    <filter id="Rectangle_5" x="-5" y="124" width="446" height="687" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" y1="0.523" x2="1" y2="0.523" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#93ffd8"/>
+      <stop offset="0.371" stop-color="#63c6ca" stop-opacity="0.933"/>
+      <stop offset="1" stop-color="#3c97bf" stop-opacity="0.878"/>
+    </linearGradient>
+    <clipPath id="clip-iPhone_12_Pro_Max_1">
+      <rect width="428" height="926"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_12_Pro_Max_1" data-name="iPhone 12 Pro Max – 1" clip-path="url(#clip-iPhone_12_Pro_Max_1)">
+    <rect width="428" height="926" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_5)">
+      <g id="Rectangle_5-2" data-name="Rectangle 5" transform="translate(0 129)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="428" height="669" rx="33" stroke="none"/>
+        <rect x="0.5" y="0.5" width="427" height="668" rx="32.5" fill="none"/>
+      </g>
+    </g>
+    <g id="left_panel" data-name="left panel" transform="translate(35 202)">
+      <text id="Sign_In" data-name="Sign In" transform="translate(36 179)" fill="#072227" font-size="13" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Sign In</tspan></text>
+      <text id="or_use_your_account" data-name="or use your account" transform="translate(33 204)" fill="#072227" font-size="6" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">or use your account</tspan></text>
+      <text id="Forgot_your_password_" data-name="Forgot your password?" transform="translate(24 312)" fill="#072227" font-size="7" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Forgot your password?</tspan></text>
+      <g id="Email" transform="translate(-1 222.089)">
+        <rect id="Rectangle_10" data-name="Rectangle 10" width="129" height="25" transform="translate(0 -0.089)" fill="#eee"/>
+        <text id="Email-2" data-name="Email" transform="translate(14 14.911)" fill="#757588" font-size="6" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Email</tspan></text>
+      </g>
+      <g id="Email-3" data-name="Email" transform="translate(-1 263.089)">
+        <rect id="Rectangle_10-2" data-name="Rectangle 10" width="129" height="25" transform="translate(0 -0.089)" fill="#eee"/>
+        <text id="Email-4" data-name="Email" transform="translate(14 14.911)" fill="#757588" font-size="6" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Email</tspan></text>
+      </g>
+      <g id="button" transform="translate(2.318 384.632)">
+        <rect id="Rectangle_11" data-name="Rectangle 11" width="107" height="27" rx="7" transform="translate(3.682 -54.632)" fill="#7900ff"/>
+        <text id="Sign_In-2" data-name="Sign In" transform="translate(46.682 -38.632)" fill="#fff" font-size="6" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Sign In</tspan></text>
+      </g>
+    </g>
+    <g id="right_panel" data-name="right panel" transform="translate(-770 17)">
+      <g id="Group_8" data-name="Group 8" transform="translate(960 112)">
+        <rect id="Rectangle_9" data-name="Rectangle 9" width="28" height="36" transform="translate(0 632)" fill="#8df8d6"/>
+        <rect id="Rectangle_8" data-name="Rectangle 8" width="28" height="32" transform="translate(0 1)" fill="#8af4d6"/>
+        <rect id="Rectangle_7" data-name="Rectangle 7" width="238" height="669" rx="36" fill="url(#linear-gradient)"/>
+      </g>
+      <text id="Welcome_Back_" data-name="Welcome Back!" transform="translate(1014 412)" fill="#fff" font-size="16" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Welcome Back!</tspan></text>
+      <text id="To_keep_connected_with_us_please_login_with_your_personal_info" data-name="To keep connected with us please login 
+with your personal info" transform="translate(1073 495)" fill="#fff" font-size="10" font-family="Montserrat-Regular, Montserrat"><tspan x="-99.825" y="0">To keep connected with us please login </tspan><tspan x="-57.395" y="13">with your personal info</tspan></text>
+    </g>
+    <g id="footer" transform="translate(0 -84.271)">
+      <rect id="footer-2" data-name="footer" width="428" height="54" transform="translate(0 956.271)" fill="#7900ff"/>
+      <text id="_2021_ShopNow_All_Rights_Reserved" data-name="© 2021 ShopNow All Rights Reserved" transform="translate(201 985.271)" fill="#fff" font-size="7" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-67.022" y="0">© 2021 ShopNow All Rights Reserved</tspan></text>
+    </g>
+  </g>
+</svg>

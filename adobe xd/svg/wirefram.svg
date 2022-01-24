@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <filter id="Rectangle_5" x="170" y="107" width="1589" height="809" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#626463"/>
+      <stop offset="0.5" stop-color="#9e9e9e" stop-opacity="0.933"/>
+      <stop offset="1" stop-color="#ccc" stop-opacity="0.878"/>
+    </linearGradient>
+    <clipPath id="clip-wirefram">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="wirefram" clip-path="url(#clip-wirefram)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_5)">
+      <g id="Rectangle_5-2" data-name="Rectangle 5" transform="translate(175 112)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="1571" height="791" rx="33" stroke="none"/>
+        <rect x="0.5" y="0.5" width="1570" height="790" rx="32.5" fill="none"/>
+      </g>
+    </g>
+    <g id="left_panel" data-name="left panel">
+      <text id="Sign_In" data-name="Sign In" transform="translate(477 328)" fill="#072227" font-size="50" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Sign In</tspan></text>
+      <text id="Text" transform="translate(549 374)" fill="#072227" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TEXT</tspan></text>
+      <text id="TEXT-2" data-name="TEXT" transform="translate(536 709)" fill="#072227" font-size="30" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TEXT</tspan></text>
+      <g id="Email">
+        <rect id="Rectangle_10" data-name="Rectangle 10" width="592" height="77" transform="translate(273 431)" fill="#eee"/>
+        <text id="Email-2" data-name="Email" transform="translate(323 480)" fill="#757588" font-size="25" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Email</tspan></text>
+      </g>
+      <g id="password" transform="translate(-1 118)">
+        <rect id="Rectangle_10-2" data-name="Rectangle 10" width="592" height="77" transform="translate(273 431)" fill="#eee"/>
+        <text id="Password-2" data-name="Password" transform="translate(323 480)" fill="#757588" font-size="25" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Password</tspan></text>
+      </g>
+      <g id="button" transform="translate(-6)">
+        <rect id="Rectangle_11" data-name="Rectangle 11" width="217" height="63" rx="20" transform="translate(466 758)" fill="#c2c2c2"/>
+        <text id="Sign_In-2" data-name="Sign In" transform="translate(529 799)" fill="#fff" font-size="25" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Sign In</tspan></text>
+      </g>
+    </g>
+    <g id="right_panel" data-name="right panel">
+      <g id="Group_8" data-name="Group 8">
+        <rect id="Rectangle_15" data-name="Rectangle 15" width="46" height="48" transform="translate(960 855)" fill="#cccecc"/>
+        <rect id="Rectangle_8" data-name="Rectangle 8" width="44" height="49" transform="translate(961 112)" fill="#cccecc"/>
+        <rect id="Rectangle_7" data-name="Rectangle 7" width="785" height="791" rx="36" transform="translate(961 112)" fill="url(#linear-gradient)"/>
+      </g>
+      <text id="Welcome_Back_" data-name="Welcome Back!" transform="translate(1137 482)" fill="#fff" font-size="53" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Welcome Back!</tspan></text>
+      <text id="TEXT-3" data-name="TEXT" transform="translate(1353 556)" fill="#fff" font-size="23" font-family="Montserrat-Regular, Montserrat"><tspan x="-27.991" y="0">TEXT</tspan></text>
+    </g>
+    <g id="footer">
+      <rect id="footer-2" data-name="footer" width="1920" height="124" transform="translate(0 956)" fill="#98949d"/>
+      <text id="text-4" data-name="text" transform="translate(960 1032)" fill="#fff" font-size="38" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-49.096" y="0">TEXT</tspan></text>
+    </g>
+  </g>
+</svg>
