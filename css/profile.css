@@ -10,14 +10,13 @@
     width: 100%;
     height: 100vh;
     gap: 15px;
-    background-color: #93FFD8;
+    background-color: #fff;
 }
 .leftSide{
     background-color: #F8F8FA;
     width: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     gap: 5px;
     height: 100vh;
 }
@@ -33,7 +32,7 @@
 
 }
 hr{
-    border: 2px solid;
+    border: 2px solid #fff;
 }
 .shop{
     padding-left: 5px;
@@ -54,15 +53,22 @@ hr{
     height: 70px;
     display: flex;
     align-items: center;
+    padding-left: 20px;
+    /* justify-content: center; */
     cursor: pointer;
 }
 .column img{
-    width: 60px;
+    width: 40px;
 }
 .column > img{
     padding-left: 30px;
 }
-.column > a{
+.leftSide button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.side-btn > a{
     display: flex;
     align-items: center;
     padding-left: 10px;
@@ -126,7 +132,7 @@ hr{
     justify-content: space-around;
     align-items: center;
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
     transform: translateY(-10px);
     transition: all 0.4s ease;
 }
@@ -187,7 +193,7 @@ hr{
     background-color: #fff;
 }
 .pro{
-    width: 247px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,27 +204,28 @@ hr{
     height: 237px;
     border-radius: 50%;
 }
-
-.from{
+.edit{
     width: 100%;
+    height: auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    padding: 10px 20px 10px 10px;
 }
-.from > div{
-    display: flex;
-    width: 50%;
-    align-items: center;
-    gap: 10px;
+
+/* .edit a {
+    text-decoration: none;
+    color: black;
 }
-.from > span{
-    width: 50%;
-    display: flex;
-}
-.from img{
-    width: 20px;
-    height: 20px;
-}
+.edit button{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rebeccapurple;
+    background-color: #93FFD8;
+    cursor: pointer;
+} */
+
 
 .pics , .info{
     border-radius: 5px;
@@ -232,7 +239,10 @@ hr{
     padding-left: 20px;
 }
 .cas{
-    background-color: #F8F8FA;
+    background: #eeeeee;
+    border-radius: 25px;
+    box-shadow: inset 2px 2px 5px #e2e2e2,
+                inset -5px -5px 10px rgba(252, 252, 252, 0.712);
     height: 70px;
     display: flex;
     align-items: center;
@@ -252,6 +262,7 @@ hr{
     .leftSide{
         width: 10%;
     }
+    
     .shop{
         display: none;
     }
@@ -262,8 +273,20 @@ hr{
         display: block;
         padding-left: 20px;
     }
-    .column a{
+    .column{
+        justify-content: center;
+        padding: 0;
+    }
+    .column > img{
+        width: 30px;
+        padding: 0;
+    }
+    .side-btn a {
         display: none;
+    }
+    .btn{
+        display: block;
+        padding-left: 20px;
     }
     .pics{
         padding: 5px 0px 0px 5px;
@@ -297,8 +320,43 @@ hr{
         font-size: 0.938rem;
     }
 }
-@media screen and (max-width: 375px){
-    /* .container{
+@media screen and (max-width: 414px){
+    .leftSide button{
+        padding: 0;
+    }
+    .column{
+        padding: 0;
+    }
+    .column img {
+        width: 31px;
+    }
+    .rightSide{
+        gap: 30px;
+    }
+    .subcontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .pics{
+        width: 100%;
+    }
+    .pro{
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-left: 20px;
+    }
+    .email span {
+        font-size: 0.838rem;
+    }
+    .cas{
+        width: 100%;
+    }
 
-    } */
 }

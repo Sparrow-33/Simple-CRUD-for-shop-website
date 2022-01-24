@@ -1,3 +1,12 @@
+<?php
+  require "includes/db_connection.php";
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/profile.css">
+    <script src="https://kit.fontawesome.com/5c0c9a79a5.js" crossorigin="anonymous"></script>
     <title>Profile</title>
 </head>
 <body>
@@ -19,28 +29,28 @@
             </div>
             <hr>
             <div class="column">
-                <img src="img/dashboard/profile.png" alt="">
-                <a href="#">Profile</a>
+                <a href="profile.html">
+                    <img src="img/dashboard/profile.png" alt="">
+                </a>
+                <div class="side-btn">
+                    <a href="profile.html">Profile</a>
+                </div>
             </div>
             <div class="column">
-                <img src="img/dashboard/Group 16.png" alt="">
-                <a href="dashboard.php">Dashboard</a>
+                <a href="dashboard.html">
+                    <img src="img/dashboard/Group 16.png" alt="">
+                </a>
+                <div class="side-btn">
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
             </div>
             <div class="column">
-                <img src="img/dashboard/box.png" alt="">
-                <a href="inventory.php">Inventory</a>
-            </div>
-            <div class="column">
-                <img src="img/dashboard/discount.png" alt="">
-                <a href="#">Sales</a>
-            </div>
-            <div class="column">
-                <img src="img/dashboard/invoice.png" alt="">
-                <a href="#">Bill</a>
-            </div>
-            <div class="column">
-                <img src="img/dashboard/delivery-courier.png" alt="">
-                <a href="#">Customer</a>
+                <a href="inventory.html">
+                    <img src="img/dashboard/box.png" alt="">
+                </a>
+                <div class="side-btn">
+                    <a href="inventory.html">Inventory</a>
+                </div>
             </div>
         </div>
         
@@ -49,19 +59,14 @@
         <div class="rightSide">
             <!-- nav bar  -->
             <div class="navbar">
-                <img src="img/dashboard/bell.png" alt="">
                 <div class="dropdown">
                     <button>
-                        <img src="img/dashboard/utilisateur.png" alt="">
+                        <img src="img/dashboard/profile.png" alt="">
                     </button>
                     <ul>
                         <div class="sub-col">
                             <img src="img/dashboard/profile.png" alt="">
-                            <li><a href="#">Profile</a></li>
-                        </div>
-                        <div class="sub-col">
-                            <img src="img/dashboard/cogwheel.png" alt="">
-                            <li><a href="#">Setting</a></li>
+                            <li><a href="profile.html">Profile</a></li>
                         </div>
                         <div class="sub-col">
                             <img src="img/dashboard/logout.png" alt="">
@@ -71,29 +76,19 @@
                 </div>
             </div>
             <div class="title">
-                <img src="img/dashboard/Group 16.png" alt="">
-                <span>Dashboard</span>
+                <img src="img/dashboard/profile.png" alt="">
+                <span>Profile</span>
             </div>
             <div class="subcontainer">
                 <div class="pics">
                     <div class="pro">
-                        <img src="img/dashboard/pic.jpg" alt="">
-                        <h2>William Hawkins</h2>
-                    </div>
-                    <hr>
-                    <div class="from">
-                        <div>
-                            <img src="img/dashboard/pin.png" alt="">
-                            <span>from</span>
+                        <img src="img/dashboard/profile.png" alt="">
+                        <div class="edit">
+                            <h2>William Hawkins</h2>
+                            <a href="#">
+                                <i class="fas fa-pen"></i>
+                            </a>
                         </div>
-                        <span>United State</span>
-                    </div>
-                    <div class="from">
-                        <div>
-                            <img src="img/dashboard/male-user-shadow.png" alt="">
-                            <span>Member Since</span>
-                        </div>
-                        <span>Sep 2019</span>
                     </div>
                 </div>
                 <div class="info">

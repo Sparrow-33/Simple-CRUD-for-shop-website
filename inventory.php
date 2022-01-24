@@ -83,7 +83,7 @@
                             </div>
                             <div class="sub-col">
                                 <img src="img/dashboard/logout.png" alt="">
-                                <li><a href="#">Log Out</a></li>
+                                <li><a href="includes/logout.php">Log Out</a></li>
                             </div>
                         </ul>
                     </div>
@@ -101,6 +101,7 @@
             </div>
 
             <div class="add_item">
+                <i class="fas fa-times exit"></i>
                  <form action="includes/add.php" class="add_item_form" method="post">
                  
                    <label for="model">Model</label>
@@ -119,11 +120,23 @@
                               
             </div>
 
-            <!-- <div class="add_item ">
-                 <form action="includes/update.php" class="add_item_form " method="post">
+            <!-- < <div class="edit_item ">
+                 
+                <?php
+                    //    require "includes/db_connection.php";
+                    //    $conn = OpenCon();
+                    //    $index = $_GET['edit'];
+                    //    $sql = "SELECT FROM product WHERE model = '$index';";
+                    //    $result = mysqli_query($conn,$sql);
+
+
+                ?>
+                 
+
+                 <form action="" class="add_item_form " method="post">
 
                    <label for="model">Model</label>
-                   <input type="text" name="model" required>
+                   <input type="text" name="model" required >
                    <label  for="brand">Brand</label >
                    <input required type="text" name="brand">
                    <label for="description">Description</label>
@@ -137,12 +150,12 @@
                  </form>
                               
             </div>
-
-
-
-
-
  -->
+
+
+
+
+ 
 
 
 
@@ -175,7 +188,7 @@
                                 <td><?php echo $row['price'] ?></td>
                                 <td><?php echo $row['quantity'] ?></td>
                                 <td>
-                                    <a class="action" href ='includes/update.php?edit=<?php echo $row['model']; ?>'>
+                                    <a class="action" href ='update.php?edit=<?php echo $row['model']; ?>'>
                                       <img src="img/dashboard/pencil.png" alt="">
                                     </a>
 
@@ -201,16 +214,17 @@
         <script>
             let addbttn = document.querySelector("#add");
             let add = document.querySelector(".add_item");
+            let out = document.querySelector(".exit")
 
             addbttn.addEventListener('click', function () {
             add.style.display="flex";
              });
 
-            window.onclick = function(event) {
-            if (event.target == add) {
-            add.style.display ="none";
-                                      }
-                                              }
+             out.addEventListener('click', function () {
+            add.style.display="none";
+             });
+
+            
         </script>
 </body>
 </html>

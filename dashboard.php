@@ -1,3 +1,10 @@
+<?php
+  require "includes/db_connection.php";
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,35 +21,43 @@
         <div class="leftSide">
             <div class="logo">
                 <img class="shop" src="img/dashboard/logo.png" alt="">
-                <!-- <button class="btn">
+                <button class="btn">
                     <img src="img/dashboard/menu.png" alt="">
-                </button> -->
+                </button>
             </div>
             <hr>
             <div class="column">
-                <img src="img/dashboard/profile.png" alt="">
-                <a href="profile.php">Profile</a>
+                <a href="profile.html">
+                    <img src="img/dashboard/profile.png" alt="">
+                </a>
+                <div class="side-btn">
+                    <a href="profile.php">Profile</a>
+                </div>
             </div>
             <div class="column">
+                <a href="dashboard.php">
+                    <img src="img/dashboard/Group 16.png" alt="">
+                </a>
+                <div class="side-btn">
+                    <a href="dashboard.php">Dashboard</a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="inventory.php">
+                    <img src="img/dashboard/box.png" alt="">
+                </a>
+                <div class="side-btn">
+                    <a href="inventory.php">Inventory</a>
+                </div>
+            </div>
+            <!-- <div class="column">
                 <img src="img/dashboard/Group 16.png" alt="">
                 <a href="#">Dashboard</a>
             </div>
             <div class="column">
                 <img src="img/dashboard/box.png" alt="">
-                <a href="inventory.php">Inventory</a>
-            </div>
-            <div class="column">
-                <img src="img/dashboard/discount.png" alt="">
-                <a href="#">Sales</a>
-            </div>
-            <div class="column">
-                <img src="img/dashboard/invoice.png" alt="">
-                <a href="#">Bill</a>
-            </div>
-            <div class="column">
-                <img src="img/dashboard/delivery-courier.png" alt="">
-                <a href="#">Customer</a>
-            </div>
+                <a href="inventory.html">Inventory</a>
+            </div> -->
         </div>
         
         <!-- ******************************************************** -->
@@ -51,20 +66,20 @@
         <div class="rightSide">
             <!-- nav bar  -->
             <div class="navbar">
-                <img src="img/dashboard/bell.png" alt="">
+                <!-- <img src="img/dashboard/bell.png" alt=""> -->
                 <div class="dropdown">
                     <button>
-                        <img src="img/dashboard/utilisateur.png" alt="">
+                        <img src="img/dashboard/profile.png" alt="">
                     </button>
                     <ul>
                         <div class="sub-col">
                             <img src="img/dashboard/profile.png" alt="">
-                            <li><a href="#">Profile</a></li>
+                            <li><a href="profile.php">Profile</a></li>
                         </div>
-                        <div class="sub-col">
+                        <!-- <div class="sub-col">
                             <img src="img/dashboard/cogwheel.png" alt="">
                             <li><a href="#">Setting</a></li>
-                        </div>
+                        </div> -->
                         <div class="sub-col">
                             <img src="img/dashboard/logout.png" alt="">
                             <li><a href="#">Log Out</a></li>
@@ -72,146 +87,47 @@
                     </ul>
                 </div>
             </div>
-            <div class="title">
-                <img src="img/dashboard/Group 16.png" alt="">
-                <span>Dashboard</span>
-            </div>
             <div class="sub-container">
-                <div class="father1">
-                    <div class="first child1">
-                        <span>Sale Overview</span>
-                        <div class="cc">
-                        <div class="son first-son1">
-                            <div>
-                                <img src="img/dashboard/sale.png" alt="">
-                                <div class="sontitle">
-                                    <span>Total Sale</span>
-                                    <span>923</span>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/dashboard/financial-profit.png" alt="">
-                                <div class="sontitle">
-                                    <span>Profit</span>
-                                    <span>614</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="son first-son2">
-                            <div>
-                                <img src="img/dashboard/revenue.png" alt="">
-                                <div class="sontitle">
-                                    <span>Revenu</span>
-                                    <span>18543</span>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/dashboard/low-price.png" alt="">
-                                <div class="sontitle">
-                                    <span>Cost</span>
-                                    <span>13690</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="hello">
+                    <div class="hello-img">
+                        <img src="img/dashboard/Factory Worker 5-01.jpg" alt="">
                     </div>
-                    </div>
-                    <div class="first child2">
-                        <span>Purchase Overview</span>
-                        <div class="cc">
-                        <div class="son first-son1">
-                            <div>
-                                <img src="img/dashboard/trolley.png" alt="">
-                                <div class="sontitle">
-                                    <span>No of Purchase</span>
-                                    <span>12</span>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/dashboard/cancelled.png" alt="">
-                                <div class="sontitle">
-                                    <span>Cancel Order</span>
-                                    <span>09</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="son first-son2">
-                            <div>
-                                <img src="img/dashboard/package.png" alt="">
-                                <div class="sontitle">
-                                    <span>Return</span>
-                                    <span>03</span>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/dashboard/low-price.png" alt="">
-                                <div class="sontitle">
-                                    <span>Cost</span>
-                                    <span>298</span>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+                    <div class="hello-title">
+                        <h2>Welcome <span>William</span> To Shop Now</h2>
+                        <p>The Statistics in Our Application</p>
                     </div>
                 </div>
-                <div class="father2">
-                    <div class="child3">
-                        <div class="ch1">
-                            <span>Inventory Overview</span>
-                        </div>
-                        <div class="ch2">
-                            <img src="img/dashboard/boxes.png" alt="">
-                            <div class="sontitle">
-                                <span>Quantity in Hand</span>
-                                <span>576</span>
+                <div class="info-row">
+                    <div class="states">
+                        <div class="top-stat">
+                            <div class="top-left">
+                                <span>States Report</span>
+                            </div>
+                            <div class="top-right">
+                                <img src="img/dashboard/dollar.png" alt="">
                             </div>
                         </div>
-                        <div class="ch2">
-                            <img src="img/dashboard/parachute.png" alt="">
-                            <div class="sontitle">
-                                <span>Well be Received</span>
-                                <span>6014</span>
+                        <div class="bottom-stat">
+                            <div class="bottom-left">
+                                <h2>Income</h2>
+                                <span>$910</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="child4">
-                        <div class="ch1">
-                            <span>No. of Users</span>
-                        </div>
-                        <div class="ch2">
-                            <img src="img/dashboard/group.png" alt="">
-                            <div class="sontitle">
-                                <span>Total Customers</span>
-                                <span>923</span>
-                            </div>
-                        </div>
-                        <div class="ch2">
-                            <img src="img/dashboard/delivery-courier.png" alt="">
-                            <div class="sontitle">
-                                <span>Total Suppliers</span>
-                                <span>2840</span>
+                            <div class="bottom-right">
+                                <h2>Most Expensive</h2>
+                                <span>$56</span>
                             </div>
                         </div>
                     </div>
-                    <div class="child5">
-                        <div class="ch1">
-                            <span>Stock Overview</span>
+                    <div class="right-box">
+                        <div class="box">
+                        <div class="box-img">
+                            <img src="img/dashboard/box.png" alt="">
                         </div>
-                        <div class="chi1">
-                            <div class="sontitl">
-                                <span>Low Stock Items</span>
-                                <span>02</span>
-                            </div>
-                            <hr>
-                            <div class="sontitl">
-                                <span>Item Group</span>
-                                <span>14</span>
-                            </div>
-                            <hr>
-                            <div class="sontitl">
-                                <span>No. of Items</span>
-                                <span>104</span>
-                            </div>
+                        <div class="box-title">
+                            <span class="total" >Number of products </span>
+                            <span class="num">02</span>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

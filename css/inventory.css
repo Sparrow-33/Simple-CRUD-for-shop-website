@@ -149,9 +149,9 @@ hr{
     justify-content: space-around;
     align-items: center;
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
     transform: translateY(-10px);
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in-out;
 }
 .sub-col img{
     width: 20px;
@@ -259,6 +259,7 @@ table{
     padding: 0px 20px;
     gap: 20px;
     border-radius: 10px;
+    border-collapse: collapse;
 }
 table img{
     width: 20px;
@@ -295,6 +296,15 @@ td{
     padding: 1em 2em;
     /* text-align: center; */
     transform: translate(50%,20%);
+    box-shadow: 0 0 10px black;
+}
+
+.add_item > i
+{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    cursor: pointer;
 }
 
 .add_item_form
