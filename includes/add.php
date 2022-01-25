@@ -1,9 +1,9 @@
- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 <?php
 
  require "db_connection.php";
+ include "script.php";
 
  $conn = OpenCon();
 
@@ -29,6 +29,14 @@
     mysqli_stmt_execute($stmt); 
 
     header("Location: ../inventory.php?message=ItemAdded");
+
+    echo '<script>
+    swal({
+  title: "Good job!",
+  text: "Item added",
+  icon: "success",
+  button: "Close",
+   });';
  }
 
 CloseCon();

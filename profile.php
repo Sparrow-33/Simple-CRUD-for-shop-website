@@ -1,5 +1,19 @@
 <?php
+
   require "includes/db_connection.php";
+  $conn = OpenCon();
+ session_start();
+
+
+  $sql = "SELECT * FROM employee ";
+  $result= mysqli_query($conn,$sql);
+  $result_check = mysqli_num_rows($result);
+  $row = mysqli_fetch_assoc($result);
+
+
+
+
+
 
 
 
@@ -29,27 +43,27 @@
             </div>
             <hr>
             <div class="column">
-                <a href="profile.html">
+                <a href="profile.php">
                     <img src="img/dashboard/profile.png" alt="">
                 </a>
                 <div class="side-btn">
-                    <a href="profile.html">Profile</a>
+                    <a href="profile.php">Profile</a>
                 </div>
             </div>
             <div class="column">
-                <a href="dashboard.html">
+                <a href="dashboard.php">
                     <img src="img/dashboard/Group 16.png" alt="">
                 </a>
                 <div class="side-btn">
-                    <a href="dashboard.html">Dashboard</a>
+                    <a href="dashboard.php">Dashboard</a>
                 </div>
             </div>
             <div class="column">
-                <a href="inventory.html">
+                <a href="inventory.php">
                     <img src="img/dashboard/box.png" alt="">
                 </a>
                 <div class="side-btn">
-                    <a href="inventory.html">Inventory</a>
+                    <a href="inventory.php">Inventory</a>
                 </div>
             </div>
         </div>
@@ -66,11 +80,11 @@
                     <ul>
                         <div class="sub-col">
                             <img src="img/dashboard/profile.png" alt="">
-                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="profile.php">Profile</a></li>
                         </div>
                         <div class="sub-col">
                             <img src="img/dashboard/logout.png" alt="">
-                            <li><a href="#">Log Out</a></li>
+                            <li><a href="includes/logout.php">Log Out</a></li>
                         </div>
                     </ul>
                 </div>
@@ -84,8 +98,8 @@
                     <div class="pro">
                         <img src="img/dashboard/profile.png" alt="">
                         <div class="edit">
-                            <h2>William Hawkins</h2>
-                            <a href="#">
+                            <h2><?php echo $row['name']  ?></h2>
+                            <a href="edit_profile.php?id=<?php echo $_SESSION['uID'] ?>">
                                 <i class="fas fa-pen"></i>
                             </a>
                         </div>
@@ -95,25 +109,25 @@
                     <div class="cas">
                         <div class="email">
                             <span class="tit">Full Name</span>
-                            <span>William Hawkins</span>
+                            <span><?php echo $row['name'] ?></span>
                         </div>
                     </div>
                     <div class="cas">
                         <div class="email">
                             <span class="tit">Email Address</span>
-                            <span>WilliamHawkins@email.com</span>
+                            <span><?php echo $row['email']  ?></span>
                         </div>
                     </div>
                     <div class="cas">
                         <div class="email">
                             <span class="tit">Phone Number</span>
-                            <span>+1 202 555 0106</span>
+                            <span><?php echo $row['phone']  ?></span>
                         </div>
                     </div>
                     <div class="cas">
                         <div class="email">
                             <span class="tit">Address</span>
-                            <span>310 Brooklyn St Arenzville, Illinois(IL), 62611</span>
+                            <span>3<?php echo $row['address'] ?>  </span>
                         </div>
                     </div>
                 </div>

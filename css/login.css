@@ -163,17 +163,6 @@ input {
 	width: 40px;
 }
 
-footer {
-    background-color: #7900FF;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
 @media(max-width:426px){
 	form{
 		padding: 10px;

@@ -42,7 +42,7 @@
                 <img src="img/dashboard/box.png" alt="">
                 <a href="#">Inventory</a>
             </div>
-            <div class="column">
+            <!-- <div class="column">
                 <img src="img/dashboard/discount.png" alt="">
                 <a href="#">Sales</a>
             </div>
@@ -53,7 +53,7 @@
             <div class="column">
                 <img src="img/dashboard/delivery-courier.png" alt="">
                 <a href="#">Customer</a>
-            </div>
+            </div> -->
         </div>
         
         <!-- ******************************************************** -->
@@ -62,12 +62,12 @@
         <div class="rightSide">
             <div class="navbar">
                 <header>
-                    <input class="search" type="text"  placeholder="Search for products...">
+                    <!-- <input class="search" type="text"  placeholder="Search for products..."> -->
                     <!-- <img src="img/dashboard/search.png" alt="" class="search"> -->
-                    <i class="fas fa-search"></i>
+                    <!-- <i class="fas fa-search"></i> -->
                  </header>
                  <div class="notif">
-                    <img src="img/dashboard/bell.png" alt="">
+                    <!-- <img src="img/dashboard/bell.png" alt=""> -->
                     <div class="dropdown">
                         <button>
                             <img src="img/dashboard/utilisateur.png" alt="">
@@ -102,8 +102,8 @@
 
             <div class="add_item">
                 <i class="fas fa-times exit"></i>
+
                  <form action="includes/add.php" class="add_item_form" method="post">
-                 
                    <label for="model">Model</label>
                    <input type="text" name="model" required>
                    <label  for="brand">Brand</label >
@@ -128,13 +128,9 @@
                     //    $index = $_GET['edit'];
                     //    $sql = "SELECT FROM product WHERE model = '$index';";
                     //    $result = mysqli_query($conn,$sql);
-
-
                 ?>
                  
-
                  <form action="" class="add_item_form " method="post">
-
                    <label for="model">Model</label>
                    <input type="text" name="model" required >
                    <label  for="brand">Brand</label >
@@ -222,9 +218,11 @@
 
              out.addEventListener('click', function () {
             add.style.display="none";
-             });
-
-            
+             });  
         </script>
 </body>
 </html>
+
+<?php
+//    include "includes/script.php";
+?>

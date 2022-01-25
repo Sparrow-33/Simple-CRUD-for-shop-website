@@ -1,6 +1,27 @@
 <?php
-  require "includes/db_connection.php";
 
+  require "includes/db_connection.php";
+  $conn = OpenCon();
+
+ session_start();
+
+  $sql = "SELECT * FROM product;";
+  $sql1="SELECT MAX(price) AS maximum FROM product;";
+
+
+  $result= mysqli_query($conn,$sql);
+  $result1= mysqli_query($conn,$sql1);
+
+
+  $row_max = mysqli_fetch_assoc($result1);  
+  $maximum = $row_max['maximum'];
+
+
+  $result_check = mysqli_num_rows($result);
+
+  $result_sum =mysqli_query($conn, 'SELECT SUM(price) AS sum FROM product');
+  $row_sum = mysqli_fetch_assoc($result_sum);
+  $sum = $row_sum['sum'];
 ?>
 
 
@@ -50,14 +71,7 @@
                     <a href="inventory.php">Inventory</a>
                 </div>
             </div>
-            <!-- <div class="column">
-                <img src="img/dashboard/Group 16.png" alt="">
-                <a href="#">Dashboard</a>
-            </div>
-            <div class="column">
-                <img src="img/dashboard/box.png" alt="">
-                <a href="inventory.html">Inventory</a>
-            </div> -->
+            
         </div>
         
         <!-- ******************************************************** -->
@@ -66,7 +80,6 @@
         <div class="rightSide">
             <!-- nav bar  -->
             <div class="navbar">
-                <!-- <img src="img/dashboard/bell.png" alt=""> -->
                 <div class="dropdown">
                     <button>
                         <img src="img/dashboard/profile.png" alt="">
@@ -76,13 +89,9 @@
                             <img src="img/dashboard/profile.png" alt="">
                             <li><a href="profile.php">Profile</a></li>
                         </div>
-                        <!-- <div class="sub-col">
-                            <img src="img/dashboard/cogwheel.png" alt="">
-                            <li><a href="#">Setting</a></li>
-                        </div> -->
                         <div class="sub-col">
                             <img src="img/dashboard/logout.png" alt="">
-                            <li><a href="#">Log Out</a></li>
+                            <li><a href="includes/logout.php">Log Out</a></li>
                         </div>
                     </ul>
                 </div>
@@ -93,7 +102,7 @@
                         <img src="img/dashboard/Factory Worker 5-01.jpg" alt="">
                     </div>
                     <div class="hello-title">
-                        <h2>Welcome <span>William</span> To Shop Now</h2>
+                        <h2>Welcome <span><?php echo $_SESSION['name'] ?></span> To Shop Now</h2>
                         <p>The Statistics in Our Application</p>
                     </div>
                 </div>
@@ -101,7 +110,7 @@
                     <div class="states">
                         <div class="top-stat">
                             <div class="top-left">
-                                <span>States Report</span>
+                                <span>State Report</span>
                             </div>
                             <div class="top-right">
                                 <img src="img/dashboard/dollar.png" alt="">
@@ -109,12 +118,12 @@
                         </div>
                         <div class="bottom-stat">
                             <div class="bottom-left">
-                                <h2>Income</h2>
-                                <span>$910</span>
+                                <h2>Amount</h2>
+                                <span>$<?php echo $sum ?></span>
                             </div>
                             <div class="bottom-right">
                                 <h2>Most Expensive</h2>
-                                <span>$56</span>
+                                <span>$<?php echo $maximum ?></span>
                             </div>
                         </div>
                     </div>
@@ -125,7 +134,7 @@
                         </div>
                         <div class="box-title">
                             <span class="total" >Number of products </span>
-                            <span class="num">02</span>
+                            <span class="num"><?php echo $result_check ?></span>
                         </div>
                     </div>
                     </div>
@@ -135,3 +144,6 @@
     </div>
 </body>
 </html>
+
+<?php 
+CloseCon($conn);
